@@ -170,16 +170,16 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         if health_n >= 20:
             health_n -= 20
             money_n += 15
-            # a.health_d -= 30
-            # a.potion -= 30
+            health_d -= 30
+            potion -= 30
         else:
             print('Кажется, у вас недостаточно ресурсов!')
     elif sl_1 == '2':
         if health_n >= 30 and weapon_n >= 20:
             health_n -= 30
             weapon_n -= 20
-            # k.v_health += 30
-            # k.v_shelter += 10
+            v_health += 30
+            v_shelter += 10
         else:
             print('Кажется у вас недостаточно ресурсов!')
     print('')
@@ -452,16 +452,16 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         if health_n >= 20 and weapon_n >= 20:
             health_n -= 20
             weapon_n -= 20
-            # a.health_d -= 40
-            # a.potion -= 10
+            health_d -= 40
+            potion -= 10
         else:
             print('Кажется, у вас недостаточно ресурсов!')
     elif sl_2 == '2':
         if health_n >= 10 and money_n >= 30:
             health_n -= 10
             money_n -= 30
-            # k.v_money += 20
-            # k.v_shelter += 30
+            v_money += 20
+            v_shelter += 30
         else:
             print('Кажется, у вас недостаточно ресурсов!')
     print('')
@@ -786,15 +786,15 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         if health_n >= 30 and weapon_n >= 30:
             health_n -= 30
             weapon_n -= 30
-            # a.health_d -= 10
-            # a.potion -= 30
+            health_d -= 10
+            potion -= 30
         else:
             print('Кажется, у вас недостаточно ресурсов!')
     elif sl_3 == '2':
         if health_n >= 15:
             health_n -= 15
-            # k.v_money += 20
-            # k.v_shelter += 10
+            v_money += 20
+            v_shelter += 10
         else:
             print('Кажется, у вас недостаточно ресурсов!')
     print('')
