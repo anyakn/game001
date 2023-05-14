@@ -186,6 +186,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print('Выбор сделан!')
     time.sleep(5)
     print('')
+    if health_n <= 0 or health_d <= 0 or v_health <= 0:
+        break
     stt_1 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
     print('')
     if stt_1 == '1':
@@ -321,6 +323,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
                 print('Кажется, у вас не хватает монет!')
         else:
             print('Играем дальше!')
+        if health_n <= 0:
+            break
         pr_3 = input('Введите "1" чтобы узнать свои текущие параметры: ')
         if pr_3 == '1':
             print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
@@ -472,6 +476,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print('Выбор сделан!')
     time.sleep(5)
     print('')
+    if health_d <= 0 or health_n <= 0 or v_health <= 0:
+        break
     stt_2 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
     print('')
     if stt_2 == '1':
@@ -633,6 +639,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
                 print('Кажется, у вас не хватает монет!')
         else:
             print('Играем дальше!')
+        if health_n <= 0:
+            break
         pr_6 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
         if pr_6 == '1':
             print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
@@ -808,6 +816,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print('')
     print('Выбор сделан!')
     print('')
+    if health_d <= 0 or health_n <= 0 or v_health <= 0:
+        break
     stt_3 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
     print('')
     if stt_3 == '1':
@@ -937,6 +947,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
                 print('Кажется, у вас не хватает монет!')
         else:
             print('Играем дальше!')
+        if health_n <= 0:
+            break
         pr_9 = input('Введите "1" чтобы узнать свои текущие параметры: ')
         if pr_9 == '1':
             print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
