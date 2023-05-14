@@ -1,16 +1,16 @@
 import random
 import time
 
-v_health = 200
+v_health = 150
 v_money = 100
 v_shelter = 500
 
-health_n = 200
+health_n = 150
 money_n = 100
 weapon_n = 500
 
-money_d = 200
-health_d = 100
+money_d = 100
+health_d = 150
 potion = 500
 
 l = [1, 2, 3]
