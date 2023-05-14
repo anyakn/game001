@@ -128,15 +128,15 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         if health_d >= 14 and potion >= 11:
             health_d -= 14
             potion -= 11
-            # health_n -= 15
-            # weapon_n -= 10
+            health_n -= 15
+            weapon_n -= 10
         else:
             print('Упс... Походу у вас недостаточно ресурсов')
     elif ch1 == '2':
         if health_d >= 12 and potion >= 13:
             health_d -= 12
             potion -= 13
-            # v_shelter -= 25
+            v_shelter -= 25
         else:
             print('Упс... Походу у вас недостаточно ресурсов')
     print('Будем надеяться этот выбор приведёт вас к победе!')
@@ -324,17 +324,17 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             health_d -= 5
             potion -= 25
             money_d += 20
-            # weapon_n -= 30
-            # v_health -= 20
-            # v_shelter -= 15
+            weapon_n -= 30
+            v_health -= 20
+            v_shelter -= 15
         else:
             print('Упс... Походу у вас недостаточно ресурсов')
     elif ch3 == '2':
         if health_d >= 10 and potion >= 20:
             health_d -= 10
             potion -= 20
-            # weapon_n -= 25
-            # health_n -= 5
+            weapon_n -= 25
+            health_n -= 5
         else:
             print('Упс... Походу у вас недостаточно ресурсов')
     print('Будем надеяться этот выбор приведёт вас к победе!')
@@ -542,7 +542,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     if ch5 != '1':
         print('Удивительное приключение ждёт вас! Не время сдаваться!')
         print('')
-    print('Демоны! Аид посылает вас на последнюю бивтву! Выполните уже наконец свою главную миссию и станьте властителями этого мира!')
+    print('Демоны! Аид посылает вас на последнюю бивтву! '
+          'Выполните уже наконец свою главную миссию и станьте властителями этого мира!')
     time.sleep(10)
     print('')
     print('Покажите этим мирным жителям наконец как надо биться! Зададим им жару!')
@@ -558,8 +559,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         if health_d >= 20 and potion >= 15:
             health_d -= 20
             potion -= 15
-            # v_health -= 27
-            # v_shelter -= 12
+            v_health -= 27
+            v_shelter -= 12
         else:
             print('Упс... Походу у вас недостаточно ресурсов')
     elif ch6 == '2':
