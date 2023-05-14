@@ -230,6 +230,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print('Будем надеяться этот выбор приведёт вас к победе!')
     print('')
     time.sleep(5)
+    if health_n <= 0 or health_d <=0 or v_health <= 0:
+        break
     ch2 = input('Введите "1", чтобы узнать свои текущие параметры: ')
     if ch2 == '1':
         print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
@@ -373,6 +375,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         else:
             print('Да я смотрю вы уверены в своих силах! Так держать, боец!')
             print('')
+        if health_d <= 0:
+            break
 
     input('Мирные жители, вы готовы начать игру? ')
     print('')
@@ -521,6 +525,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print('Будем надеяться этот выбор приведёт вас к победе!')
     print('')
     time.sleep(5)
+    if health_n <= 0 or health_d <= 0 or v_health <= 0:
+        break
     ch4 = input('Введите "1", чтобы узнать свои текущие параметры: ')
     if ch4 == '1':
         print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
@@ -685,6 +691,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         else:
             print('Да я смотрю вы уверены в своих силах! Так держать, боец!')
             print('')
+        if health_d <= 0:
+            break
 
 
     input('Мирные жители, вы готовы продолжить игру? ')
@@ -839,6 +847,9 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         potion += 20
     print('Будем надеяться этот выбор приведёт вас к победе!')
     print('')
+    time.sleep(5)
+    if health_n <= 0 or health_d <=0 or v_health <= 0:
+        break
     ch7 = input('Введите "1", чтобы узнать свои текущие параметры: ')
     if ch7 == '1':
         print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
@@ -983,4 +994,6 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         else:
             print('Да я смотрю вы уверены в своих силах! Так держать, боец!')
             print('')
+        if health_d <= 0:
+            break
 
