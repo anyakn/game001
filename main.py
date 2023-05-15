@@ -107,19 +107,19 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print(ru.plot_9)
     print('')
     time.sleep(5)
-    print(altering_1)
-    print(altering_2)
+    print(ru.altering_1)
+    print(ru.altering_2)
     print('')
     time.sleep(3)
-    print(plot_10)
+    print(ru.plot_10)
     print('')
     time.sleep(3)
-    print(altering_3)
+    print(ru.altering_3)
     print('')
     time.sleep(2)
-    print(plot_11)
+    print(ru.plot_11)
 
-    ans_1 = input(des_1)
+    ans_1 = input(ru.des_1)
     if ans_1 == 1:
         if v_health >= 10 and potion >= 20:
             v_health -= 10
@@ -127,24 +127,24 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             potion -= 20
         else:
             v_shelter += 20
-            print(outcome_1)
+            print(ru.outcome_1)
     elif ans_1 == 2:
         v_shelter += 20
     print('')
-    print(st4)
+    print(ru.st4)
     print('')
     time.sleep(2)
     if  v_health == 0:
-        print(outcome_5)
+        print(ru.outcome_5)
         break
     time.sleep(2)
-    ans_10 = input(res0)
+    ans_10 = input(ru.res0)
     print('')
     if ans_10 == 1:
         print(ru.res0, '\n', ru.res1, v_health, '\n', ru.res2, v_money, '\n', ru.res3, v_shelter)
         print('')
     else:
-        print(st5)
+        print(ru.st5)
         print('')
 
 
@@ -247,44 +247,44 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print('')
 
 
-    print(st6)
+    print(ru.st6)
     print('')
-    print(st7)
+    print(ru.st7)
     time.sleep(2)
     rand_event1_v = random.randint(1, 2)
     if rand_event1_v == 1:
-        print(possible_1)
+        print(ru.possible_1)
         v_money += 20
     else:
-        print(possible_2)
+        print(ru.possible_2)
         if v_shelter >= 40:
             v_shelter -= 40
         else:
             v_shelter = 0
         time.sleep(1)
-        print(possible_3)
+        print(ru.possible_3)
         time.sleep(1)
-        ans_3 = input(des_2)
+        ans_3 = input(ru.des_2)
         if ans_3 == 1:
             if v_money >= 30:
                 v_money -= 30
                 v_shelter += 20
             else:
-                print(outcome_2)
+                print(ru.outcome_2)
         else:
-            print(outcome_8)
+            print(ru.outcome_8)
 
     if v_health == 0:
-        print(outcome_4)
+        print(ru.outcome_4)
         break
 
-    ans_4 = input(res0)
+    ans_4 = input(ru.res0)
     print('')
     if ans_4 == 1:
         print(ru.res0, '\n', ru.res1, v_health, '\n', ru.res2, v_money, '\n', ru.res3, v_shelter)
         print('')
     else:
-        print(st5)
+        print(ru.st5)
         print('')
 
     print('Вы готовы к испытанию?')
@@ -386,33 +386,33 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         if health_d <= 0:
             break
 
-    print(st6)
+    print(ru.st6)
     print('')
     time.sleep(3)
-    print(ch1)
+    print(ru.ch1)
     time.sleep(2)
     print('')
-    print(plot_12)
-    print(plot_13)
+    print(ru.plot_12)
+    print(ru.plot_13)
     time.sleep(5)
     print('')
-    print(altering_4)
-    print(altering_5)
+    print(ru.altering_4)
+    print(ru.altering_5)
     time.sleep(3)
     print('')
-    print(plot_14)
-    print(plot_15)
-    print(plot_16)
-    print(plot_17)
+    print(ru.plot_14)
+    print(ru.plot_15)
+    print(ru.plot_16)
+    print(ru.plot_17)
     time.sleep(9)
     print('')
-    print(altering_6)
-    print(altering_7)
+    print(ru.altering_6)
+    print(ru.altering_7)
     time.sleep(3)
     print('')
-    print(plot_11)
+    print(ru.plot_11)
     time.sleep(1)
-    ans_1 = input(des_3)
+    ans_1 = input(ru.des_3)
     if ans_1 == 1:
         if v_health >= 20:
             if health_n >= 20:
@@ -422,7 +422,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
                 v_health -= 20
                 health_n = 0
         else:
-            print(outcome_3)
+            print(ru.outcome_3)
 
     elif ans_1 == 2:
         v_health += 10
@@ -431,23 +431,23 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         else:
             health_n = 0
     print('')
-    print(st4)
+    print(ru.st4)
     print('')
     time.sleep(2)
 
     if health_n == 0:
-        print(outcome_4)
+        print(ru.outcome_4)
         break
     elif v_health == 0:
-        print(outcome_5)
+        print(ru.outcome_5)
         break
-    ans_40 = input(res0)
+    ans_40 = input(ru.res0)
     print('')
     if ans_40 == 1:
         print(ru.res0, '\n', ru.res1, v_health, '\n', ru.res2, v_money, '\n', ru.res3, v_shelter)
         print('')
     else:
-        print(st5)
+        print(ru.st5)
         print('')
 
 
@@ -556,16 +556,15 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print('Продолжаем битву!')
         print('')
 
-    print('Мирные жители, ваш час настал. Игра продолжается. ')
-    print('Время не ждёт! Скрестите пальцы.')
+    print(ru.st9)
+    print(ru.st7)
     time.sleep(3)
     rand_event1_d = random.randint(1, 2)
     if rand_event1_d == 1:
-        print(
-            'Отличый улов! Кажется, этой рыбы хватит не только на пропитание, но и на продажу. ВЫ получили +20 "монет".')
+        print(ru.possible_4)
         v_money += 20
     else:
-        print('Какая неудача... Это стихия! Цунами! Око смерча! Ваше "убежище" уменьшилось на 30, "здоровье" на 20')
+        print(ru.possible_5)
         if v_shelter >= 30:
             v_shelter -= 30
             if v_health >= 20:
@@ -574,7 +573,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
                 v_health = 0
         else:
             v_shelter = 0
-        print('Кажется, у вас появилась проблема...')
+        print(ru.possible_3)
         time.sleep(1)
         print('')
     ans_6 = input('Введите "1", если хотите потратить 30 "монет" чтобы добавить +15 "убежища": ')
