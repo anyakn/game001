@@ -1,7 +1,7 @@
 import random
 import time
 import local_karolina as ru
-import local_Uly.ru as r
+import local_Uly as r
 import local_anya as ar
 
 v_health = 150
