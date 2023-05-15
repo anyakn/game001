@@ -2,6 +2,7 @@ import random
 import time
 import local_karolina as ru
 import local_Uly.ru as r
+import local_anya as ar
 
 v_health = 150
 v_money = 100
@@ -52,24 +53,24 @@ print(r.gr_10)
 print('')
 time.sleep(10)
 
-fb1 = input('Вы готовы узнать узнать как магический шар распределил вас на команды? Введите "1", чтобы продолжить ')
+fb1 = input(ar.fb1)
 if fb1 != '1':
-    print('Удивительное приключение ждёт вас! Не время сдаваться!')
+    print(ar.mtv1)
     print('')
 time.sleep(5)
-print('Право обладать силой ангелов принадлежит команде', a)
-print('Право властвовать отродьями ада принадлежит команде', d)
-print('Право управлять судьбой местных жителей принадлежит команде', c)
+print(ar.dst1, a)
+print(ar.dst2, d)
+print(ar.dst3, c)
 print('')
-print('Примите наши поздравления!')
+print(ar.dst4)
 print('')
 time.sleep(5)
-fb2 = input('Введите "1", чтобы начать эту легендарную битву! ')
+fb2 = input(ar.fb2)
 if fb2 == '1':
-    print('Отлично! Начинаем!')
+    print(ar.ans1)
     print('')
 else:
-    print('Удивительное приключение ждёт вас! Не время сдаваться!')
+    print(ar.mtv1)
     print('')
 time.sleep(5)
 
@@ -79,7 +80,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print(ru.st2)
     print('')
     time.sleep(1)
-    print(ru.res0, '\n', ru.res1, v_health, '\n', ru.res2, v_money, '\n', ru.res3, v_shelter)
+    print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
     time.sleep(3)
     print('')
     print(ru.st3)
@@ -136,7 +137,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     ans_10 = input(ru.res0)
     print('')
     if ans_10 == 1:
-        print(ru.res0, '\n', ru.res1, v_health, '\n', ru.res2, v_money, '\n', ru.res3, v_shelter)
+        print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
     else:
         print(ru.st5)
@@ -195,23 +196,23 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print(r.pl_fur)
         print('')
 
-    print('Демоны! У вас есть', money_d, 'монет,', health_d, 'здоровья и', potion, 'зелья!')
+    print(ar.check1, money_d, ar.check2, health_d, ar.check3, potion, ar.check4)
     print('')
     time.sleep(5)
-    print('Демоны! Вам предстоит сделать судьбоносный выбор... Аид в ярости из-за проделок нефилимов. Покажите кто тут господин!')
+    print(ar.cha1)
     time.sleep(10)
     print('')
-    print('Радуйтесь больше смерти! У него уже есть заготовленный коварный план - ночное нападение на нефилимов!')
-    print('Как меняются ваши ваши параметры:', '\n', '"Здоровье" -14', '\n', '"Зелье" -11')
-    print('Как меняются параметры нефилимов:', '\n', '"Здоровье" -25', '\n', '"Оружие" -10')
+    print(ar.cha2)
+    print(ar.cha3, '\n', ar.cha4, '\n', ar.cha5)
+    print(ar.cha6, '\n', ar.cha7, '\n', ar.cha8)
     time.sleep(10)
     print('')
-    print('Но вы можете выбрать план похитрее... Нападите на тех, кого они защищают - местных жителей. Вот этого-то они точно не ожидают!')
-    print('Как меняются ваши параметры:', '\n', '"Здоровье" -12', '\n', '"Зелье" -13')
-    print('Как меняются параметры мирных жителей:',  '\n', '"Убежище" -25')
+    print(ar.cha9)
+    print(ar.cha3, '\n', ar.cha10, '\n', ar.cha11)
+    print(ar.cha12,  '\n', ar.cha13)
     time.sleep(10)
     print('')
-    ch1 = input('Если вы выбираете 1 вариант, то введите "1". Если вы выбираете 2 вариант, то введите "2": ')
+    ch1 = input(ar.ch1)
     if ch1 == '1':
         if health_d >= 14 and potion >= 11:
             health_d -= 14
@@ -219,25 +220,25 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             health_n -= 15
             weapon_n -= 10
         else:
-            print('Упс... Походу у вас недостаточно ресурсов')
+            print(ar.rfs1)
     elif ch1 == '2':
         if health_d >= 12 and potion >= 13:
             health_d -= 12
             potion -= 13
             v_shelter -= 25
         else:
-            print('Упс... Походу у вас недостаточно ресурсов')
-    print('Будем надеяться этот выбор приведёт вас к победе!')
+            print(ar.rfs1)
+    print(ar.mtv2)
     print('')
     time.sleep(5)
     if health_n <= 0 or health_d <=0 or v_health <= 0:
         break
-    ch2 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+    ch2 = input(ar.ch2)
     if ch2 == '1':
-        print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
+        print(ar.check5, '\n', ar.check6, health_d, '\n', ar.check7, money_d, '\n', ar.check8, potion)
         print('')
     else:
-        print('Продолжаем битву!')
+        print(ar.ans2)
         print('')
 
 
@@ -275,7 +276,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     ans_4 = input(ru.res0)
     print('')
     if ans_4 == 1:
-        print(ru.res0, '\n', ru.res1, v_health, '\n', ru.res2, v_money, '\n', ru.res3, v_shelter)
+        print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
     else:
         print(ru.st5)
@@ -327,25 +328,25 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             print(r.pl_fur)
             print('')
 
-    fb3 = input('Демоны, приготовьтесь к первому случайному событию! Введите "1", чтобы продолжить ')
+    fb3 = input(ar.randa1)
     if fb3 != '1':
-        print('Не время вешать нос! Фантастическая битва ждёт вас!')
+        print(ar.mtv3)
     print('')
     time.sleep(5)
     rand_event1_d = random.randint(1,2)
     if rand_event1_d == 1:
-        print('Да вы сегодня везунчик! Шабаш! Вы увеличили "Здоровье" на 30 и "Зелье" на 20!')
+        print(ar.randa2)
         health_d += 30
         potion += 20
-        fb4 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+        fb4 = input(ar.ch2)
         if fb4 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
+            print(ar.check5, '\n', ar.check6, health_d, '\n', ar.check7, money_d, '\n', ar.check8, potion)
             print('')
         else:
-            print('Продолжаем битву!')
+            print(ar.ans2)
             print('')
     else:
-        print('Сегодня явно не ваш день! Зельевар заболел! Вы потеряли 20 "здоровья" и 30 "зелья"...')
+        print(ar.randa3)
         if health_d >= 20:
             health_d -= 20
         else:
@@ -354,25 +355,25 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             potion -= 30
         else:
             potion = 0
-        fb4 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+        fb4 = input(ar.ch2)
         if fb4 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
+            print(ar.check5, '\n', ar.check6, health_d, '\n', ar.check7, money_d, '\n', ar.check8, potion)
             print('')
         else:
-            print('Продолжам битву!')
+            print(ar.ans2)
             print('')
         time.sleep(5)
-        fb5 = input('Вы хотите потратить 30 монет, чтобы увеличить "здоровье" на 20? Если да, введите "1" ')
+        fb5 = input(ar.randa4)
         if fb5 == '1':
             if money_d >= 30:
                 money_d -= 30
                 health_d += 20
-                print('Да я смотрю вы настроены на победу!')
+                print(ar.fb3)
                 print('')
             else:
-                print('Упс.. Походу у вас не хватает монет')
+                print(ar.rfs2)
         else:
-            print('Да я смотрю вы уверены в своих силах! Так держать, боец!')
+            print(ar.fb4)
             print('')
         if health_d <= 0:
             break
@@ -435,7 +436,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     ans_40 = input(ru.res0)
     print('')
     if ans_40 == 1:
-        print(ru.res0, '\n', ru.res1, v_health, '\n', ru.res2, v_money, '\n', ru.res3, v_shelter)
+        print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
     else:
         print(ru.st5)
@@ -492,29 +493,29 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print(r.pl_fur)
         print('')
 
-    cp = input('Вам предстоит сделать второй важный выбор, мои злодеи! Введите "1", чтобы продолжить ')
+    cp = input(ar.chb1)
     if cp != '1':
-        print('Удивительное приключение ждёт вас! Не время сдаваться!')
+        print(ar.mtv1)
         print('')
-    print('Демоны! У вас есть', money_d, 'монет,', health_d, 'здоровья и', potion, 'зелья!')
+    print(ar.check1, money_d, ar.check2, health_d, ar.check3, potion, ar.check4)
     print('')
     time.sleep(5)
-    print('Демоны! Ваш повелитель нуждается в вас! От вашего решения будет зависеть будущее всего подземного царства!')
-    print('Нефилимы и мирные жители вышли за пределы дозволенного: они устоили тайный заговор. К счастью, наши хитрые разведчики не дремлют!')
+    print(ar.chb2)
+    print(ar.chb3)
     time.sleep(10)
     print('')
-    print('Нефилимы хотят переправить своё оружие этим бездарным созданиям! Не позвольте же им это сделать! Устройте им подлянку на месте встречи!')
-    print('Как меняются ваши ваши параметры:', '\n', '"Здоровье" -5', '\n', '"Зелье" -25', '\n', '"Монеты" +20')
-    print('Как меняются параметры нефилимов:', '\n', '"Оружие" -30')
-    print('Как меняются параметры мирных жителей:', '\n', '"Здоровье" -20', '\n', '"Убежище" -15')
+    print(ar.chb4)
+    print(ar.chb5, '\n', ar.chb6, '\n', ar.chb7, '\n', ar.chb8)
+    print(ar.chb9, '\n', ar.chb10)
+    print(ar.chb11, '\n', ar.chb12, '\n', ar.chb13)
     time.sleep(10)
     print('')
-    print('Но какой же большой соблазн проучить этих нефилимов! Может добавить им огонька к оружейке?')
-    print('Как меняются ваши параметры:', '\n', '"Здоровье" -10', '\n', '"Зелье" -20')
-    print('Как меняются параметры нефилимов:',  '\n', '"Оружие" -25', '\n', '"Здоровье" -5')
+    print(ar.chb14)
+    print(ar.chb5, '\n', ar.chb15, '\n', ar.chb16)
+    print(ar.chb9,  '\n', ar.chb17, '\n', ar.chb18)
     time.sleep(10)
     print('')
-    ch3 = input('Если вы выбираете 1 вариант, то введите "1". Если вы выбираете 2 вариант, то введите "2": ')
+    ch3 = input(ar.ch1)
     if ch3 == '1':
         if health_d >= 5 and potion >= 25:
             health_d -= 5
@@ -524,7 +525,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             v_health -= 20
             v_shelter -= 15
         else:
-            print('Упс... Походу у вас недостаточно ресурсов')
+            print(ar.rfs1)
     elif ch3 == '2':
         if health_d >= 10 and potion >= 20:
             health_d -= 10
@@ -532,18 +533,18 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             weapon_n -= 25
             health_n -= 5
         else:
-            print('Упс... Походу у вас недостаточно ресурсов')
-    print('Будем надеяться этот выбор приведёт вас к победе!')
+            print(ar.rfs1)
+    print(ar.mtv2)
     print('')
     time.sleep(5)
     if health_n <= 0 or health_d <= 0 or v_health <= 0:
         break
-    ch4 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+    ch4 = input(ar.ch2)
     if ch4 == '1':
-        print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
+        print(ar.check5, '\n', ar.check6, health_d, '\n', ar.check7, money_d, '\n', ar.check8, potion)
         print('')
     else:
-        print('Продолжаем битву!')
+        print(ar.ans2)
         print('')
 
     print(ru.st9)
@@ -566,47 +567,47 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print(ru.possible_3)
         time.sleep(1)
         print('')
-    ans_6 = input('Введите "1", если хотите потратить 30 "монет" чтобы добавить +15 "убежища": ')
+    ans_6 = input(ru.des_4)
     print('')
     if ans_6 == 1:
         if v_money >= 30:
             v_money -= 30
             v_shelter += 15
         else:
-            print('Кажется, у вас недостаточно монет... Что же, попробуете в следующий раз')
-            ans_7 = input('Введите "1", если хотите потратить 20 "монет" чтобы добавить +10 "здоровья": ')
+            print(ru.outcome_6)
+            ans_7 = input(ru.des_5)
             print('')
             if ans_7 == 1:
                 if v_money >= 20:
                     v_money -= 20
                     v_health += 10
                 else:
-                    print('Кажется, у вас недостаточно монет... Что же, попробуете в следующий раз')
+                    print(ru.outcome_6)
+    else:
+        ans_80 = input(ru.des_5)
+        print('')
+        if ans_80 == 1:
+            if v_money >= 20:
+                v_money -= 20
+                v_health += 10
             else:
-                ans_80 = input('Введите "1", если хотите потратить 20 "монеты" чтобы добавить +10 "здоровья": ')
-                print('')
-                if ans_80 == 1:
-                    if v_money >= 20:
-                        v_money -= 20
-                        v_health += 10
-                    else:
-                        print('Кажется, у вас недостаточно монет... Что же, попробуете в следующий раз')
-                else:
-                    print('Похоже, вы уверены в своих силах! Так держать!')
-                    print('')
+                print(ru.outcome_6)
+        else:
+            print('Похоже, вы уверены в своих силах! Так держать!')
+            print('')
 
     if v_health == 0:
         break
-        print('Местные жители проиграли!')
+        print(ru.outcome_5)
 
-    ans_5 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
+    ans_5 = input(ru.res0)
     print('')
     if ans_5 == 1:
         print('')
-        print('Итого:', '\n', 'Здоровье:', v_health, '\n', 'Монеты:', v_money, '\n', 'Убежище:', v_shelter)
+        print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
     else:
-        print('Отличная работа!')
+        print(ru.st5)
     print('')
 
     print(r.chc_3)
@@ -651,86 +652,85 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             print(r.pl_fur)
             print('')
 
-    fb6 = input('Демоны, приготовьтесь ко второму случайному событию! Введите "1", чтобы продолжить ')
+    fb6 = input(ar.randb1)
     if fb6 != '1':
-        print('Не время вешать нос! Фантастическая битва ждёт вас!')
+        print(ar.mtv3)
     print('')
     time.sleep(5)
     rand_event1_d = random.randint(1,2)
     if rand_event1_d == 1:
-        print('Да провалиться вам сквозь землю! Удача на вашей стороне! Сегодня полнолуние! Вы увеличили "здоровье" на 30 и "зелье" на 10!')
+        print(ar.randb2)
         health_d += 30
         potion += 10
-        fb7 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+        fb7 = input(ar.ch2)
         if fb7 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
+            print(ar.check5, '\n', ar.check6, health_d, '\n', ar.check7, money_d, '\n', ar.check8, potion)
             print('')
         else:
-            print('Продолжаем битву!')
+            print(ar.ans2)
             print('')
     else:
-        print('Жизнь не бывает всегда так благосклонна! Сегодня солнцестояние! Ваше "здоровье" уменьшилось на 30!')
+        print(ar.randb3)
         if health_d >= 30:
             health_d -= 30
         else:
             health_d = 0
-        fb7 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+        fb7 = input(ar.ch2)
         if fb7 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
+            print(ar.check5, '\n', ar.check6, health_d, '\n', ar.check7, money_d, '\n', ar.check8, potion)
             print('')
         else:
-            print('Продолжам битву!')
+            print(ar.ans2)
             print('')
         time.sleep(5)
-        fb8 = input('Введите "1", чтобы потрать 30 "монет" на +30 "здоровья" или введите "2", чтобы за 25 "монет" купить +30 "зелья" ')
+        fb8 = input(ar.randb4)
         if fb8 == '1':
             if money_d >= 30:
                 money_d -= 30
                 health_d += 30
-                print('Да я смотрю вы настроены на победу!')
+                print(ar.fb3)
                 print('')
             else:
-                print('Упс.. Походу у вас не хватает монет')
+                print(ar.rfs2)
         elif fb8 == '2':
             if money_d >= 25:
                 money_d -= 25
                 potion += 30
-                print('Да я смотрю вы настроены на победу!')
+                print(ar.fb3)
                 print('')
             else:
-                print('Упс.. Походу у вас не хватает монет')
+                print(ar.rfs2)
         else:
-            print('Да я смотрю вы уверены в своих силах! Так держать, боец!')
+            print(ar.fb4)
             print('')
         if health_d <= 0:
             break
 
-    print('Мирные жители, пришло время продолжить игру.')
+    print(ru.st9)
     print('')
     time.sleep(3)
-    print('Приготовьтесь! Вам предстоит сделать сложный выбор... Какой из двух путей лучший? Решать только вам.')
+    print(ru.ch1)
     time.sleep(2)
     print('')
-    print('Вы уже давно не вступали в бой я демонами...Пора бы уже дать отдохнуть Ангелам, да и ваши параметры успели')
-    print('неплохо восстоновится. Нельзя давать врагу время на отдых! Хотите собрать отряд? ')
+    print(ru.plot_17)
+    print(ru.plot_18)
     time.sleep(5)
     print('')
-    print('Изменения ваших параметров: здоровье -20')
-    print('Изменение параметров Демонов: здоровье -20    зелья -10')
+    print(ru.altering_10)
+    print(ru.altering_11)
     time.sleep(3)
     print('')
-    print('Вот только стоит ли оно того? Могут ли простые смертные заметно ослабить демонов? Не лучше ли помочь')
-    print('восстоновится Ангелам, чтобы они уже сошлись с нечистью в равной схватке?')
+    print(ru.plot_19)
+    print(ru.plot_20)
     print('')
     time.sleep(9)
-    print('Изменения ваших параметров: деньги -20')
-    print('Изменение параметров Ангелов: деньги +20  здоровье +10')
+    print(ru.altering_12)
+    print(ru.altering_13)
     time.sleep(3)
     print('')
-    print('Каким путём вы последуете в этот раз?')
+    print(ru.plot_11)
     time.sleep(1)
-    ans_14 = int(input('Введите "1",если хотите помочь ангелам; '
-                       'Введите "2",если хотите отказать в помощи: '))
+    ans_14 = input(ru.des_6)
     if ans_14 == 1:
         if v_health >= 20:
             if health_n >= 20:
@@ -740,8 +740,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
                 v_health -= 20
                 health_n = 0
         else:
-            print(
-                'Похоже, у вас недостаточно ресурсов для этого выбора... И всё же, вы должны помочь Ангелам, даже если лишь матриально!')
+            print(ru.outcome_7)
             if v_money >= 20:
                 v_money -= 20
                 money_n += 20
@@ -761,22 +760,22 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             v_money = 0
             health_n += 10
     print('')
-    print('Выбор сделан! ')
+    print(ru.st4)
     print('')
     time.sleep(2)
 
     if v_health == 0:
-        print('Местные жители проиграли!')
+        print(ru.outcome_5)
         break
 
-    ans_17 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
+    ans_17 = input(ru.res0)
     print('')
     if ans_17 == 1:
         print('')
-        print('Итого:', '\n', 'Здоровье:', v_health, '\n', 'Монеты:', v_money, '\n', 'Убежище:', v_shelter)
+        print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
     else:
-        print('Отличная работа!')
+        print(ru.st5)
     print('')
 
     print(r.chc_4)
@@ -826,23 +825,22 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print(r.pl_fur)
         print('')
 
-    ch5 = input('Демоны! Вам в третий раз предстоит сделать сложный выбор! Введите "1", чтобы продолжить ')
+    ch5 = input(ar.chc1)
     if ch5 != '1':
-        print('Удивительное приключение ждёт вас! Не время сдаваться!')
+        print(ar.mtv1)
         print('')
-    print('Демоны! Аид посылает вас на последнюю бивтву! '
-          'Выполните уже наконец свою главную миссию и станьте властителями этого мира!')
+    print(ar.chc2)
     time.sleep(10)
     print('')
-    print('Покажите этим мирным жителям наконец как надо биться! Зададим им жару!')
-    print('Как меняются ваши ваши параметры:', '\n', '"Здоровье" -20', '\n', '"Зелье" -15')
-    print('Как меняются параметры мирных жителей:', '\n', '"Здоровье" -27', '\n', '"Убежище" -12')
+    print(ar.chc3)
+    print(ar.chc4, '\n', ar.chc5, '\n', ar.chc6)
+    print(ar.chc7, '\n', ar.chc8, '\n', ar.chc9)
     time.sleep(10)
     print('')
-    print('Битва битвой, но о себе заботиться тоже надо! Хотите остаться в своём логове и восстановить силы?')
-    print('Как меняются ваши параметры:', '\n', '"Здоровье" +30', '\n', '"Зелье" +20')
+    print(ar.chc10)
+    print(ar.chc4, '\n', ar.chc11, '\n', ar.chc12)
     time.sleep(10)
-    ch6 = input('Если вы выбираете 1 вариант, то введите "1". Если вы выбираете 2 вариант, то введите "2" ')
+    ch6 = input(ar.ch1)
     if ch6 == '1':
         if health_d >= 20 and potion >= 15:
             health_d -= 20
@@ -850,62 +848,62 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             v_health -= 27
             v_shelter -= 12
         else:
-            print('Упс... Походу у вас недостаточно ресурсов')
+            print(ar.rfs1)
     elif ch6 == '2':
         health_d += 30
         potion += 20
-    print('Будем надеяться этот выбор приведёт вас к победе!')
+    print(ar.mtv2)
     print('')
     time.sleep(5)
     if health_n <= 0 or health_d <=0 or v_health <= 0:
         break
-    ch7 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+    ch7 = input(ar.ch2)
     if ch7 == '1':
-        print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
+        print(ar.check5, '\n', ar.check6, health_d, '\n', ar.check7, money_d, '\n', ar.check8, potion)
         print('')
     else:
-        print('Продолжаем битву!')
+        print(ar.ans2)
         print('')
 
-    input('Мирные жители, пора испытать удачу!')
-    print('Время не ждёт! Скрестите пальцы!')
+    print(ru.st10)
+    print(ru.st7)
     time.sleep(1)
     rand_event1_d = random.randint(1, 2)
     if rand_event1_d == 1:
-        print('Эх, не зря говорят, что земля - кормилица! Благодоря большому урожаю, вы получили +20 "монет".')
+        print(ru.possible_6)
         v_money += 20
         time.sleep(1)
         print('')
     else:
-        print('Могло быть и хуже, но некуда. В вашем поселении эпидемия дизентерии, "здоровье" уменьшилось на 30')
+        print(ru.possible_7)
         if v_health >= 30:
             v_health -= 30
         else:
             v_health = 0
         time.sleep(1)
-        print('Кажется, у вас появилась проблема...')
+        print(ru.possible_3)
         print('')
-        ans_12 = input('Введите "1", если хотите потратить 30 "монет" чтобы добавить +20 "здоровья"')
+        ans_12 = input(ru.des_7)
         if ans_12 == 1:
             if v_money >= 30:
                 v_money -= 30
                 v_health += 20
             else:
-                print('Кажется, у вас недостаточно монет... Что же, попробуете в следующий раз')
+                print(ru.outcome_2)
         else:
-            print('Похоже, выы уверены в своих силах! Так держать!')
+            print(ru.outcome_8)
             print('')
 
     if v_health == 0:
-        print('Местные жители проиграли!')
+        print(ru.outcome_5)
         break
 
-    ans_13 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
+    ans_13 = input(ru.res0)
     print('')
     if ans_13 == 1:
-        print('Итого:', '\n', 'Здоровье:', v_health, '\n', 'Монеты:', v_money, '\n', 'Убежище:', v_shelter)
+        print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
     else:
-        print('Продолжим!')
+        print(ru.st5)
 
     print(r.chc_5)
     print('')
@@ -952,90 +950,129 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         else:
             print(r.pl_fur)
 
-    fb9 = input('Демоны, приготовьтесь к финальному третьему случайному событию! Введите "1", чтобы продолжить ')
+    fb9 = input(ar.randc1)
     if fb9 != '1':
-        print('Не время вешать нос! Фантастическая битва ждёт вас!')
+        print(ar.mtv3)
     print('')
     rand_event1_d = random.randint(1,2)
     time.sleep(5)
     if rand_event1_d == 1:
-        print('Демоническая удача! Вы получили жертвоприношение! Вы увеличили "здоровье" на 20 и "зелье" на 18!')
+        print(ar.randc2)
         health_d += 20
         potion += 18
-        fb10 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+        fb10 = input(ar.ch2)
         if fb10 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
+            print(ar.check5, '\n', ar.check6, health_d, '\n', ar.check7, money_d, '\n', ar.check8, potion)
             print('')
         else:
-            print('Продолжаем битву!')
+            print(ar.ans2)
             print('')
     else:
-        print('Походу судьба не хочет быть к вам блогосклонной... Обстрел серебрянными пулями! "Здоровье" уменьшилось на 30!')
+        print(ar.randc3)
         if health_d >= 30:
             health_d -= 30
         else:
             health_d = 0
-        fb11 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+        fb11 = input(ar.ch2)
         if fb11 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_d, '\n', 'Монеты:', money_d, '\n', 'Зелье:', potion)
+            print(ar.check5, '\n', ar.check6, health_d, '\n', ar.check7, money_d, '\n', ar.check8, potion)
             print('')
         else:
-            print('Продолжам битву!')
+            print(ar.ans2)
             print('')
         time.sleep(5)
-        fb12 = input('Введите "1", чтобы потрать 30 "монет" на +20 "здоровья" или введите "2", чтобы за 25 "монет" купить +17 "зелья" ')
+        fb12 = input(ar.randc4)
         if fb12 == '1':
             if money_d >= 30:
                 money_d -= 30
                 health_d += 20
-                print('Да я смотрю вы настроены на победу!')
+                print(ar.fb3)
                 print('')
             else:
-                print('Упс.. Походу у вас не хватает монет')
+                print(ar.rfs2)
         elif fb12 == '2':
             if money_d >= 25:
                 money_d -= 25
                 potion += 17
-                print('Да я смотрю вы настроены на победу!')
+                print(ar.fb3)
                 print('')
             else:
-                print('Упс.. Походу у вас не хватает монет')
+                print(ar.rfs2)
         else:
-            print('Да я смотрю вы уверены в своих силах! Так держать, боец!')
+            print(ar.fb4)
             print('')
         if health_d <= 0:
             break
+time.sleep(5)
 
 
 if  health_n > 0 and health_d > 0:
-    print('Ох-ох-ох! Похоже, теперь вы остались вдвоём... Нефилимы против Демонов. Эта битва будет легендарной!')
+    print(ru.ft_1)
     print('')
-    print('Победитель будет определен исходя из набранных за игру очков. Для этого мы проверим "здоровье" обеих команд')
-    print('а также их "зелья" и "оружие", причём здоровье повлияет на победу на 40%,а второй параметр - на целых 60!')
+    print(ru.ft_2)
+    print(ru.ft_3)
     print('')
-    print('«Адский день! Легко оглохнуть от дикого, неумолкного рева армий. Острые клинки, свистящие в небесах, '
-          'визжали, шикали и, как град, осыпаются на землю смертоносным дождём; вспышки заклинаний, посланых в самый '
-          'центр поля битвы, поражают молниеносно, не давая и шанса осмыслить происходящее... Однако сегодня с этого '
-          'боя выйдет лишь один победитель...')
+    print(ru.ft_4)
+    print(ru.ft_5)
+    print(ru.ft_6)
+    print(ru.ft_7)
     points_n = health_n * 0.4 + weapon_n * 0.6
     points_d = health_d * 0.4 + potion * 0.6
     if points_n > points_d:
-        print('Победу одержали...')
+        print(ru.ft_8)
         print('')
-        print('Нефилимы!')
+        print(ru.ft_9)
     elif points_n < points_d:
-        print('Победу одержали...')
+        print(ru.ft_8)
         print('')
-        print('Демоны!')
+        print(ru.ft_10)
     else:
-        print('Похоже, силы противников оказались равны... А значит, воины могут полагаться лишь на удачу. '
-              'Пусть всё решиться волей случая!')
+        print(ru.ft_11)
+        print(ru.ft_12)
         rand_event1_d = random.randint(1, 2)
         if rand_event1_d == 1:
-            print('Победу одержали...')
+            print(ru.ft_8)
             print('')
-            print('Демоны!')
+            print(ru.ft_10)
         else:
-            print('Победу одержали...')
+            print(ru.ft_8)
             print('')
-            print('Нефилимы!')
+            print(ru.ft_9)
+
+if health_d <= 0:
+    print(ar.war1)
+
+if v_health > 0 and health_d > 0:
+    print(ar.war2)
+    print('')
+    print(ar.war3)
+    print('')
+    print(ar.war4)
+    time.sleep(10)
+    points_v = v_health * 0.4 + v_shelter * 0.6
+    points_d = health_d * 0.4 + potion * 0.6
+    if points_v > points_d:
+        print(ar.war5)
+        time.sleep(5)
+        print('')
+        print(ar.war6)
+    elif points_v < points_d:
+        print(ar.war5)
+        time.sleep(5)
+        print('')
+        print(ar.war7)
+    else:
+        print(ar.war8)
+        rand_event2_d = random.randint(1, 2)
+        if rand_event2_d == 1:
+            print(ar.war5)
+            time.sleep(5)
+            print('')
+            print(ar.war6)
+        else:
+            print(ar.war5)
+            time.sleep(5)
+            print('')
+            print(ar.war7)
+time.sleep(5)
+print(ar.war9)
