@@ -593,7 +593,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             else:
                 print(ru.outcome_6)
         else:
-            print('Похоже, вы уверены в своих силах! Так держать!')
+            print(ru.st8)
             print('')
 
     if v_health == 0:
