@@ -597,8 +597,8 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             print('')
 
     if v_health == 0:
-        break
         print(ru.outcome_5)
+        break
 
     ans_5 = input(ru.res0)
     print('')
