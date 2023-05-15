@@ -55,7 +55,7 @@ time.sleep(10)
 
 fb1 = input(ar.fb1)
 if fb1 != '1':
-    print(ar.mrv1)
+    print(ar.mtv1)
     print('')
 time.sleep(5)
 print(ar.dst1, a)
