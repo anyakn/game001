@@ -116,7 +116,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print(ru.plot_11)
 
     ans_1 = input(ru.des_1)
-    if ans_1 == 1:
+    if ans_1 == '1':
         if v_health >= 10 and potion >= 20:
             v_health -= 10
             v_money += 20
@@ -124,7 +124,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         else:
             v_shelter += 20
             print(ru.outcome_1)
-    elif ans_1 == 2:
+    elif ans_1 == '2':
         v_shelter += 20
     print('')
     print(ru.st4)
@@ -136,7 +136,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     time.sleep(2)
     ans_10 = input(ru.res0)
     print('')
-    if ans_10 == 1:
+    if ans_10 == '1':
         print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
     else:
@@ -260,7 +260,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print(ru.possible_3)
         time.sleep(1)
         ans_3 = input(ru.des_2)
-        if ans_3 == 1:
+        if ans_3 == '1':
             if v_money >= 30:
                 v_money -= 30
                 v_shelter += 20
@@ -275,7 +275,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
 
     ans_4 = input(ru.res0)
     print('')
-    if ans_4 == 1:
+    if ans_4 == '1':
         print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
     else:
@@ -405,7 +405,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print(ru.plot_11)
     time.sleep(1)
     ans_1 = input(ru.des_3)
-    if ans_1 == 1:
+    if ans_1 == '1':
         if v_health >= 20:
             if health_n >= 20:
                 v_health -= 20
@@ -416,7 +416,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         else:
             print(ru.outcome_3)
 
-    elif ans_1 == 2:
+    elif ans_1 == '2':
         v_health += 10
         if health_n >= 30:
             health_n -= 30
@@ -435,7 +435,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         break
     ans_40 = input(ru.res0)
     print('')
-    if ans_40 == 1:
+    if ans_40 == '1':
         print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
     else:
@@ -569,7 +569,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print('')
     ans_6 = input(ru.des_4)
     print('')
-    if ans_6 == 1:
+    if ans_6 == '1':
         if v_money >= 30:
             v_money -= 30
             v_shelter += 15
@@ -577,7 +577,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             print(ru.outcome_6)
             ans_7 = input(ru.des_5)
             print('')
-            if ans_7 == 1:
+            if ans_7 == '1':
                 if v_money >= 20:
                     v_money -= 20
                     v_health += 10
@@ -586,7 +586,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     else:
         ans_80 = input(ru.des_5)
         print('')
-        if ans_80 == 1:
+        if ans_80 == '1':
             if v_money >= 20:
                 v_money -= 20
                 v_health += 10
@@ -602,7 +602,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
 
     ans_5 = input(ru.res0)
     print('')
-    if ans_5 == 1:
+    if ans_5 == '1':
         print('')
         print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
@@ -731,7 +731,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     print(ru.plot_11)
     time.sleep(1)
     ans_14 = input(ru.des_6)
-    if ans_14 == 1:
+    if ans_14 == '1':
         if v_health >= 20:
             if health_n >= 20:
                 v_health -= 20
@@ -750,7 +750,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
                 v_money = 0
                 health_n += 10
 
-    elif ans_14 == 2:
+    elif ans_14 == '2':
         if v_money >= 20:
             v_money -= 20
             money_n += 20
@@ -770,7 +770,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
 
     ans_17 = input(ru.res0)
     print('')
-    if ans_17 == 1:
+    if ans_17 == '1':
         print('')
         print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
         print('')
@@ -884,7 +884,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print(ru.possible_3)
         print('')
         ans_12 = input(ru.des_7)
-        if ans_12 == 1:
+        if ans_12 == '1':
             if v_money >= 30:
                 v_money -= 30
                 v_health += 20
@@ -900,7 +900,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
 
     ans_13 = input(ru.res0)
     print('')
-    if ans_13 == 1:
+    if ans_13 == '1':
         print(ru.res1, '\n', ru.res2, v_health, '\n', ru.res3, v_money, '\n', ru.res4, v_shelter)
     else:
         print(ru.st5)
@@ -1016,15 +1016,18 @@ if  health_n > 0 and health_d > 0:
     print(ru.ft_5)
     print(ru.ft_6)
     print(ru.ft_7)
+    time.sleep(5)
     points_n = health_n * 0.4 + weapon_n * 0.6
     points_d = health_d * 0.4 + potion * 0.6
     if points_n > points_d:
         print(ru.ft_8)
         print('')
+        time.sleep(5)
         print(ru.ft_9)
     elif points_n < points_d:
         print(ru.ft_8)
         print('')
+        time.sleep(5)
         print(ru.ft_10)
     else:
         print(ru.ft_11)
@@ -1033,10 +1036,12 @@ if  health_n > 0 and health_d > 0:
         if rand_event1_d == 1:
             print(ru.ft_8)
             print('')
+            time.sleep(5)
             print(ru.ft_10)
         else:
             print(ru.ft_8)
             print('')
+            time.sleep(5)
             print(ru.ft_9)
 
 if health_d <= 0:
