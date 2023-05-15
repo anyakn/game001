@@ -1,6 +1,7 @@
 import random
 import time
 import local_karolina as ru
+import local_Uly.ru as r
 
 v_health = 150
 v_money = 100
@@ -20,40 +21,34 @@ a = int(l[0])
 d = int(l[1])
 c = int(l[2])
 
-print('Добро пожаловать в игру "Fantastic survival"! Пожалуй, начнем погружение в наш мир.')
+print(r.gr_1)
 time.sleep(5)
 print('')
-print('Есть три клана, за которые вы можете играть. Первый клан - Мирные жители, каковыми и являемся мы с вами. '
-      'Второй клан - Демоны, которые '
-      'представляют собой вампиров, оборотней и ведьм.')
+print(r.gr_2)
 time.sleep(10)
 print('')
-print('И последние - это Нефилимы потомки ангелов. Выглядят они как обычные люди, однако в их крови течет ангельская кровь,'
-      'что позволяет им иметь нечеловеческую силу и защищать людей.')
+print(r.gr_3)
 time.sleep(10)
 print('')
-print('Перейдем к концепции игры. В мире идет противостояние, люди страшатся выходить ночами - '
-      'за каждым темным углом их поджидают Демоны.')
+print(r.gr_4)
 time.sleep(10)
 print('')
-print('Однако, Нефилимы были сотворены ангельскими силами, чтобы защищать мир и поддерживать его в балансе. Интересно?')
+print(r.gr_5)
 time.sleep(10)
 print('')
-print('Вам предстоит пройти несколько уровней: каждый неверный шаг может привести к краху! '
-      'Поэтому обдуманно совершайте выбор.')
+print(r.gr_6)
 time.sleep(10)
 print('')
-print('У каждой из трех команд есть обязательные ресурсы: здоровье и монеты. '
-      'При чем, есть и третий - у каждой команды он разный!')
+print(r.gr_7)
 time.sleep(10)
 print('')
-print('У Мирных жителей - убежище, у Нефилимов - оружие, а у Демонов - зелье.')
+print(r.gr_8)
 time.sleep(10)
 print('')
-print('Ваша команда, за которую Вы будете играть, будет распределена на рандоме.')
+print(r.gr_9)
 time.sleep(10)
 print('')
-print('Сохраняйте ваше здоровье, чтобы игра не завершилась для вас. Удачи!')
+print(r.gr_10)
 print('')
 time.sleep(10)
 
@@ -148,28 +143,27 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print('')
 
 
-    print('Параметры "Нефилимов": ', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+    print(r.prm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
     time.sleep(5)
     print('')
-    print('Судьба судьбой, но выбор всегда за Вами, дорогие Нефилимы. Есть два пути развития событий.')
+    print(r.chc_1)
     time.sleep(5)
     print('')
-    print('1) Вы прокрались в логово Демонов и разграбили зельеварню. Как же так? '
-          'Больше Демоны не смогут пополнять здоровье зельем!')
+    print(r.dcn_1)
     time.sleep(5)
     print('')
-    print('Как меняются ваши параметры:', '\n', '"Здоровье": -20', '\n', '"Монеты": +15')
-    print('Как меняются параметры противника:', '\n', '"Здоровье": -30', '\n', '"Зелье": -30')
+    print(r.dff_my, '\n', r.hlt_ch20, '\n', r.cns_ch15)
+    print(r.dff_enemy, '\n', r.hlt_ch30, '\n', r.ptn_ch30)
     time.sleep(5)
     print('')
-    print('2) Или же... Вы поспешили спасать заплутавших мирных жителей, которые оказались в плену у Демонов.')
+    print(r.dcn_2)
     time.sleep(5)
     print('')
-    print('Как меняются ваши параметры:', '\n', '"Здоровье": -30', '\n', '"Оружие": -20')
-    print('Как меняются параметры Мирных жителей:', '\n', '"Здоровье": +30', '\n', '"Убежище": +10')
+    print(r.dff_my, '\n', r.hlt_ch30, '\n', r.wpn_ch20)
+    print(r.dff_ppl, '\n', r.hlt_ch_pl30, '\n', r.sht_ch_pl10)
     time.sleep(5)
     print('')
-    sl_1 = input('Если хотите выбрать 1-й исход, то введите "1". Если хотите выбрать 2-й исход, то введите "2": ')
+    sl_1 = input(r.sl)
     if sl_1 == '1':
         if health_n >= 20:
             health_n -= 20
@@ -177,7 +171,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             health_d -= 30
             potion -= 30
         else:
-            print('Кажется, у вас недостаточно ресурсов!')
+            print(r.rsr)
     elif sl_1 == '2':
         if health_n >= 30 and weapon_n >= 20:
             health_n -= 30
@@ -185,20 +179,20 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             v_health += 30
             v_shelter += 10
         else:
-            print('Кажется у вас недостаточно ресурсов!')
+            print(r.rsr)
     print('')
-    print('Выбор сделан!')
+    print(r.dn)
     time.sleep(5)
     print('')
     if health_n <= 0 or health_d <= 0 or v_health <= 0:
         break
-    stt_1 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
+    stt_1 = input(r.stt)
     print('')
     if stt_1 == '1':
-        print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+        print(r.sm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
         print('')
     else:
-        print('Играем дальше!')
+        print(r.pl_fur)
         print('')
 
     print('Демоны! У вас есть', money_d, 'монет,', health_d, 'здоровья и', potion, 'зелья!')
@@ -287,25 +281,22 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print(ru.st5)
         print('')
 
-    print('Вы готовы к испытанию?')
+    print(r.rd)
     print('')
-    print('Приготовьтесь, что же выпало вам на этот раз?')
+    print(r.be_rd_1)
     print('')
     rndm_event_1 = random.randint(1, 2)
     if rndm_event_1 == 1:
-        print(
-            'Сегодня ваш день! Вы заговорили ангельскими силами ваши клинки и это автоматически увеличило урон от оружия. Вы получили +50 "оружия".')
+        print(r.event_1)
         weapon_n += 50
         print('')
-        pr_1 = input('Нажмите "1", чтобы узнать свои текущие параметры: ')
+        pr_1 = input(r.stt)
         if pr_1 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+            print(r.sm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
         else:
-            print('Играем дальше!')
+            print(r.pl_fur)
     else:
-        print(
-            'Во время ночного патруля на вас напали дикие животные. Многие в ваших рядах пострадали от такой неожиданности. '
-            '"здоровье" и "оружие" уменьшились на 20')
+        print(r.event_2)
         if health_n >= 20:
             health_n -= 20
         else:
@@ -315,25 +306,25 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         else:
             weapon_n = 0
         print('')
-        print('Ваши ресурсы в убытке...')
+        print(r.rsr_lw)
         time.sleep(5)
         print('')
-        pr_2 = input('Введите "1", если хотите потратить 30 "монет" чтобы добавить +10 "оружия": ')
+        pr_2 = input(r.pch_1)
         if pr_2 == '1':
             if money_n >= 30:
                 money_n -= 30
                 weapon_n += 10
             else:
-                print('Кажется, у вас не хватает монет!')
+                print(r.cns_lw)
         else:
-            print('Играем дальше!')
+            print(r.pl_fur)
         if health_n <= 0:
             break
-        pr_3 = input('Введите "1" чтобы узнать свои текущие параметры: ')
+        pr_3 = input(r.stt)
         if pr_3 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+            print(r.sm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
         else:
-            print('Играем дальше!')
+            print(r.pl_fur)
             print('')
 
     fb3 = input('Демоны, приготовьтесь к первому случайному событию! Введите "1", чтобы продолжить ')
@@ -452,25 +443,24 @@ while health_d > 0 and v_health > 0 and health_n > 0:
 
 
 
-    print('Вам вновь предстоит сделать сложный выбор, Нефилимы!')
+    print(r.chc_2)
     time.sleep(5)
     print('')
-    print('Аид, предводитель Демонов, отдал приказ немедленно нападать на деревню мирных жителей...'
-          , '\n', '1) Вы организовали отряд Нефилимов, чтобы предотвратить жестокое нападение.')
+    print(r.event_3, '\n', r.dcn_3)
     time.sleep(5)
     print('')
-    print('Как меняются ваши параметры:', '\n', '"Здоровье": -20', '\n', '"Оружие": -20')
-    print('Как меняются параметры противника:', '\n', '"Здоровье": -40', '\n', '"Зелье": -10')
+    print(r.dff_my, '\n', r.hlt_ch20, '\n', r.wpn_ch20)
+    print(r.dff_enemy, '\n', r.hlt_ch40, '\n', r.ptn_ch10)
     time.sleep(5)
     print('')
-    print('2) Вы решили помочь Мирным Жителям укрепить их убежища, чтобы Демоны не смогли разгромить их постройки.')
+    print(r.dcn_4)
     time.sleep(5)
     print('')
-    print('Как меняются ваши параметры:', '\n', '"Здоровье": -10', '\n', '"Монеты": -30')
-    print('Как меняются параметры Мирных жителей:', '\n', '"Монеты": +20', '\n', '"Убежище": +30')
+    print(r.dff_my, '\n', r.hlt_ch10, '\n', r.cns_ch30)
+    print(r.dff_ppl, '\n', r.cns_ch_pl20, '\n', r.sht_ch_pl30)
     time.sleep(5)
     print('')
-    sl_2 = input('Если хотите выбрать 1-й исход, то введите "1". Если хотите выбрать 2-й исход, то введите "2": ')
+    sl_2 = input(r.sl)
     if sl_2 == '1':
         if health_n >= 20 and weapon_n >= 20:
             health_n -= 20
@@ -478,7 +468,7 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             health_d -= 40
             potion -= 10
         else:
-            print('Кажется, у вас недостаточно ресурсов!')
+            print(r.rsr)
     elif sl_2 == '2':
         if health_n >= 10 and money_n >= 30:
             health_n -= 10
@@ -486,20 +476,20 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             v_money += 20
             v_shelter += 30
         else:
-            print('Кажется, у вас недостаточно ресурсов!')
+            print(r.rsr)
     print('')
-    print('Выбор сделан!')
+    print(r.dn)
     time.sleep(5)
     print('')
     if health_d <= 0 or health_n <= 0 or v_health <= 0:
         break
-    stt_2 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
+    stt_2 = input(r.stt)
     print('')
     if stt_2 == '1':
-        print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+        print(r.sm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
         print('')
     else:
-        print('Играем дальше!')
+        print(r.pl_fur)
         print('')
 
     cp = input('Вам предстоит сделать второй важный выбор, мои злодеи! Введите "1", чтобы продолжить ')
@@ -619,48 +609,46 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print('Отличная работа!')
     print('')
 
-    print('Нефилимы, зло все ближе и ближе! Нужно стоять на страже порядка. Вы готовы?')
+    print(r.chc_3)
     print('')
-    print('Что же послали вам Высшие Силы на этот раз? Приготовьтесь...')
+    print(r.be_rd_2)
     print('')
     rndm_event_1 = random.randint(1, 2)
     if rndm_event_1 == 1:
-        print('Вы удостоились чести пройти ритуал нанесения рун! Руны придают вам силы во время сражений. '
-              'Вы получили +20 "здоровья"!')
+        print(r.event_4)
         health_n += 20
         print('')
-        pr_4 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+        pr_4 = input(r.stt)
         if pr_4 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+            print(r.sm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
         else:
-            print('Ваши дела идут в гору!')
+            print(r.mt_1)
     else:
-        print(
-            'Опять эти орки! Устроили пожар в вашей оружейной. Вы потеряли много оружия... "Оружие" уменьшилось на 50')
+        print(r.event_5)
         if weapon_n >= 50:
             weapon_n -= 50
         else:
             weapon_n = 0
         print('')
-        print('Не переживайте, за каждой черной полосой следует белая.')
+        print(r.mt_2)
         time.sleep(5)
         print('')
-        pr_5 = input('Введите "1", если хотите потратить 30 "Монет", чтобы приобрести +30 "Оружия": ')
+        pr_5 = input(r.pch_2)
         if pr_5 == '1':
             if money_n >= 30:
                 money_n -= 30
                 weapon_n += 30
             else:
-                print('Кажется, у вас не хватает монет!')
+                print(r.cns_lw)
         else:
-            print('Играем дальше!')
+            print(r.pl_fur)
         if health_n <= 0:
             break
-        pr_6 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
+        pr_6 = input(r.stt)
         if pr_6 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+            print(r.sm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
         else:
-            print('Играем дальше!')
+            print(r.pl_fur)
             print('')
 
     fb6 = input('Демоны, приготовьтесь ко второму случайному событию! Введите "1", чтобы продолжить ')
@@ -791,29 +779,24 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         print('Отличная работа!')
     print('')
 
-    print('Приготовьтесь! Вам предстоит сделать сложный выбор... Какой из двух путей лучший? Решать только вам.')
+    print(r.chc_4)
     time.sleep(5)
     print('')
-    print(
-        'Нефилимы, во время ночного патруля вы случайно рассекретили место шабаша ведьм. Какая наглость! Они устроили ритуал прямо посреди леса.',
-        '\n',
-        '1) Нападать во время ритуала очень рискованно... Ведь они находятся на пике своих сил, потери могут быть слишком большие для вас.')
+    print(r.event_6, '\n', r.dcn_5)
     time.sleep(5)
     print('')
-    print('Как меняются ваши параметры:', '\n', '"Здоровье": -30', '\n', '"Оружие": -30')
-    print('Как меняются параметры противника:', '\n', '"Здоровье": -10', '\n', '"Зелье": -30')
+    print(r.dff_my, '\n', r.hlt_ch30, '\n', r.wpn_ch30)
+    print(r.dff_enemy, '\n', r.hlt_ch10, '\n', r.ptn_ch30)
     time.sleep(5)
     print('')
-    print(
-        '2) Кажется, поселение Мирных жителей находится недалеко от проведения шабаша... Надо предупредить поселян не выходить ночью из убежища! '
-        'Иначе может случиться что-то непоправимое.')
+    print(r.dcn_6)
     time.sleep(5)
     print('')
-    print('Как меняются ваши параметры:', '\n', '"Здоровье": -15')
-    print('Как меняются параметры Мирных жителей:', '\n', '"Здоровье": +20', '\n', '"Убежище": +10')
+    print(r.dff_my, '\n', r.hlt_ch15)
+    print(r.dff_ppl, '\n', r.hlt_ch_pl20, '\n', r.sht_ch_pl10)
     time.sleep(5)
     print('')
-    sl_3 = input('Если хотите выбрать 1-й исход, то введите "1". Если хотите выбрать 2-й исход, то введите "2": ')
+    sl_3 = input(r.sl)
     if sl_3 == '1':
         if health_n >= 30 and weapon_n >= 30:
             health_n -= 30
@@ -821,26 +804,26 @@ while health_d > 0 and v_health > 0 and health_n > 0:
             health_d -= 10
             potion -= 30
         else:
-            print('Кажется, у вас недостаточно ресурсов!')
+            print(r.rsr)
     elif sl_3 == '2':
         if health_n >= 15:
             health_n -= 15
             v_money += 20
             v_shelter += 10
         else:
-            print('Кажется, у вас недостаточно ресурсов!')
+            print(r.rsr)
     print('')
-    print('Выбор сделан!')
+    print(r.dn)
     print('')
     if health_d <= 0 or health_n <= 0 or v_health <= 0:
         break
-    stt_3 = input('Нажмите "1" чтобы узнать свои текущие параметры: ')
+    stt_3 = input(r.stt)
     print('')
     if stt_3 == '1':
-        print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+        print(r.sm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
         print('')
     else:
-        print('Играем дальше!')
+        print(r.pl_fur)
         print('')
 
     ch5 = input('Демоны! Вам в третий раз предстоит сделать сложный выбор! Введите "1", чтобы продолжить ')
@@ -924,24 +907,22 @@ while health_d > 0 and v_health > 0 and health_n > 0:
     else:
         print('Продолжим!')
 
-    print('Превосходно играем, Нефилимы! Ангелы не зря поделились с вами своим даром. Продолжаем?')
+    print(r.chc_5)
     print('')
-    print('Интересно, какое испытание на этот раз?')
+    print(r.be_rd_3)
     print('')
     rndm_event_1 = random.randint(1, 2)
     if rndm_event_1 == 1:
-        print(
-            'Как мы знаем, молитвы исцеляют наши души и приносят гармонию в жизнь. Утренние молитвы пошли Вам на пользу! Вы получили +15 "Здоровья".')
+        print(r.event_7)
         health_n += 15
         print('')
-        pr_7 = input('Введите "1", чтобы узнать свои текущие параметры: ')
+        pr_7 = input(r.stt)
         if pr_7 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+            print(r.sm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
         else:
-            print('Ваши дела идут в гору!')
+            print(r.mt_1)
     else:
-        print(
-            'Караул! Орки не дремлют... На этот раз они подстроили нападение на ваш отряд! Ваше "Здоровье" уменьшилось на 40, к сожалению, "Оружие" сократилось на 20')
+        print(r.event_8)
         if weapon_n >= 20:
             weapon_n -= 20
         else:
@@ -951,25 +932,25 @@ while health_d > 0 and v_health > 0 and health_n > 0:
         else:
             health_n = 0
         print('')
-        print('Не падаем духом, впереди нас ждет величайшая битва!')
+        print(r.mt_3)
         time.sleep(5)
         print('')
-        pr_8 = input('Введите "1", если хотите потратить 30 "монет", чтобы приобрести +20 "здоровья": ')
+        pr_8 = input(r.pch_3)
         if pr_8 == '1':
             if money_n >= 30:
                 money_n -= 30
                 health_n += 20
             else:
-                print('Кажется, у вас не хватает монет!')
+                print(r.cns_lw)
         else:
-            print('Играем дальше!')
+            print(r.pl_fur)
         if health_n <= 0:
             break
-        pr_9 = input('Введите "1" чтобы узнать свои текущие параметры: ')
+        pr_9 = input(r.stt)
         if pr_9 == '1':
-            print('Итого:', '\n', 'Здоровье:', health_n, '\n', 'Монеты:', money_n, '\n', 'Оружие:', weapon_n)
+            print(r.sm, '\n', r.hlt, health_n, '\n', r.cns, money_n, '\n', r.wpn, weapon_n)
         else:
-            print('Играем дальше!')
+            print(r.pl_fur)
 
     fb9 = input('Демоны, приготовьтесь к финальному третьему случайному событию! Введите "1", чтобы продолжить ')
     if fb9 != '1':
