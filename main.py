@@ -1,3 +1,9 @@
+'''
+Кнопова Анна - 50
+Балан Каролина - 50
+Шилкова Ульяна - 50
+'''
+
 import random
 import time
 import local_karolina as ru
